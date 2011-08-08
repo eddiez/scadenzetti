@@ -1,0 +1,12 @@
+D:\Siti, sw mio\Scadenzetti\svn\Scadenzetti\Scadenzetti\bin\Debug\Scadenzetti.exe
+D:\Siti, sw mio\Scadenzetti\svn\Scadenzetti\Scadenzetti\bin\Debug\Scadenzetti.pdb
+D:\Siti, sw mio\Scadenzetti\svn\Scadenzetti\Scadenzetti\obj\Debug\ResolveAssemblyReference.cache
+D:\Siti, sw mio\Scadenzetti\svn\Scadenzetti\Scadenzetti\obj\Debug\Scadenzetti.Properties.Resources.resources
+D:\Siti, sw mio\Scadenzetti\svn\Scadenzetti\Scadenzetti\obj\Debug\Scadenzetti.csproj.GenerateResource.Cache
+D:\Siti, sw mio\Scadenzetti\svn\Scadenzetti\Scadenzetti\obj\Debug\Scadenzetti.exe
+D:\Siti, sw mio\Scadenzetti\svn\Scadenzetti\Scadenzetti\obj\Debug\Scadenzetti.pdb
+D:\Siti, sw mio\Scadenzetti\svn\Scadenzetti\Scadenzetti\obj\Debug\Scadenzetti.MainForm.resources
+D:\Siti, sw mio\Scadenzetti\svn\Scadenzetti\Scadenzetti\bin\Debug\scadenzettiDb.mdb
+D:\Siti, sw mio\Scadenzetti\svn\Scadenzetti\Scadenzetti\bin\Debug\Scadenzetti.exe.config
+D:\Siti, sw mio\Scadenzetti\svn\Scadenzetti\Scadenzetti\obj\Debug\Scadenzetti.MovimentiSearchResultForm.resources
+D:\Siti, sw mio\Scadenzetti\svn\Scadenzetti\Scadenzetti\obj\Debug\Scadenzetti.AddUserForm.resources

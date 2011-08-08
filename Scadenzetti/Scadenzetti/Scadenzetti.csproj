@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FD19EA83-7ADD-436C-96DB-AD2FC30A3517}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Scadenzetti</RootNamespace>
+    <AssemblyName>Scadenzetti</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>1251299073_Calendar.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCategoryForm.Designer.cs">
+      <DependentUpon>AddCategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddDestinatarioForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDestinatarioForm.Designer.cs">
+      <DependentUpon>AddDestinatarioForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMovimentoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMovimentoForm.Designer.cs">
+      <DependentUpon>AddMovimentoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddRateazioneForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddRateazioneForm.Designer.cs">
+      <DependentUpon>AddRateazioneForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddRateMovimento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddRateMovimento.Designer.cs">
+      <DependentUpon>AddRateMovimento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUserForm.Designer.cs">
+      <DependentUpon>AddUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Categoria.cs" />
+    <Compile Include="CategoryCheckbox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CategoryRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CategoryReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CategoryReportForm.Designer.cs">
+      <DependentUpon>CategoryReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccessGateway.cs" />
+    <Compile Include="DateSearchCriteria.cs" />
+    <Compile Include="Destinatario.cs" />
+    <Compile Include="DestinatarioDropDownItem.cs" />
+    <Compile Include="EditCategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditCategoryForm.Designer.cs">
+      <DependentUpon>EditCategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditDestinatarioForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditDestinatarioForm.Designer.cs">
+      <DependentUpon>EditDestinatarioForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditMovimentoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditMovimentoForm.Designer.cs">
+      <DependentUpon>EditMovimentoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditUserForm.Designer.cs">
+      <DependentUpon>EditUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonthlyExpenseReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonthlyExpenseReportForm.Designer.cs">
+      <DependentUpon>MonthlyExpenseReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonthlyExpenseReportItem.cs" />
+    <Compile Include="MonthlyReportSearchCriteria.cs" />
+    <Compile Include="Movimento.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCategoryForm.resx">
+      <DependentUpon>AddCategoryForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDestinatarioForm.resx">
+      <DependentUpon>AddDestinatarioForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMovimentoForm.resx">
+      <DependentUpon>AddMovimentoForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddRateazioneForm.resx">
+      <DependentUpon>AddRateazioneForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddRateMovimento.resx">
+      <DependentUpon>AddRateMovimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUserForm.resx">
+      <DependentUpon>AddUserForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CategoryReport.rdlc" />
+    <EmbeddedResource Include="CategoryReportForm.resx">
+      <DependentUpon>CategoryReportForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditCategoryForm.resx">
+      <DependentUpon>EditCategoryForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditDestinatarioForm.resx">
+      <DependentUpon>EditDestinatarioForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditMovimentoForm.resx">
+      <DependentUpon>EditMovimentoForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditUserForm.resx">
+      <DependentUpon>EditUserForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonthlyExpenseReport.rdlc" />
+    <EmbeddedResource Include="MonthlyExpenseReportForm.resx">
+      <DependentUpon>MonthlyExpenseReportForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportAllMov.rdlc" />
+    <EmbeddedResource Include="ReportAllMovForm.resx">
+      <DependentUpon>ReportAllMovForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportSearchCriteriaForm.resx">
+      <DependentUpon>ReportSearchCriteriaForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchMovimentiForm.resx">
+      <DependentUpon>SearchMovimentiForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectCategoryForm.resx">
+      <DependentUpon>SelectCategoryForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YearMatrixReport.rdlc" />
+    <EmbeddedResource Include="YearMatrixReportForm.resx">
+      <DependentUpon>YearMatrixReportForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RataMovimento.cs" />
+    <Compile Include="ReportAllMovForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportAllMovForm.Designer.cs">
+      <DependentUpon>ReportAllMovForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportSearchCriteriaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportSearchCriteriaForm.Designer.cs">
+      <DependentUpon>ReportSearchCriteriaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="scadenzettiDbDataSet.cs">
+      <DependentUpon>scadenzettiDbDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="scadenzettiDbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>scadenzettiDbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SearchMovimentiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchMovimentiForm.Designer.cs">
+      <DependentUpon>SearchMovimentiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectCategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectCategoryForm.Designer.cs">
+      <DependentUpon>SelectCategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Utente.cs" />
+    <Compile Include="UtenteDropDownItem.cs" />
+    <Compile Include="YearMatrixReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YearMatrixReportForm.Designer.cs">
+      <DependentUpon>YearMatrixReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YearMatrixReportItem.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1248512766_Money_Pig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sherlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\Categoria.datasource" />
+    <None Include="Properties\DataSources\DateSearchCriteria.datasource" />
+    <None Include="Properties\DataSources\MonthlyExpenseReportItem.datasource" />
+    <None Include="Properties\DataSources\MonthlyReportSearchCriteria.datasource" />
+    <None Include="Properties\DataSources\YearMatrixReportItem.datasource" />
+    <None Include="Resources\printer.png" />
+    <None Include="scadenzettiDbDataSet.xsc">
+      <DependentUpon>scadenzettiDbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="scadenzettiDbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>scadenzettiDbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="scadenzettiDbDataSet.xss">
+      <DependentUpon>scadenzettiDbDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1251299073_Calendar.ico" />
+    <None Include="Resources\Add_24x24.png" />
+    <Content Include="scadenzettiDb.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
