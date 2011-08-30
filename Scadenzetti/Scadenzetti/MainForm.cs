@@ -285,5 +285,19 @@ namespace Scadenzetti
                 this.loadNextMonthMovDataGrid();
             }
         }
+
+        private void fatturaMultimovimentoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddFatturaMultiMovForm afmmf = new AddFatturaMultiMovForm();
+            DialogResult dr = afmmf.ShowDialog();
+
+            if (dr == DialogResult.OK)
+            {
+                //salva movimenti fattura multi-movimento
+
+                this.loadElapsedMovDataGrid();
+                this.loadNextMonthMovDataGrid();
+            }
+        }
     }
 }
