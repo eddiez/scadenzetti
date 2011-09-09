@@ -12,6 +12,8 @@ namespace Scadenzetti
     {
         List<Categoria> categorieMov;
         private DataTable vociCategoriaDt;
+        
+        public event EventHandler TotalChanged;
 
         public MovimentoFatturaControl(List<Categoria> cats)
         {
@@ -83,6 +85,8 @@ namespace Scadenzetti
                 tot += (decimal)vociCategoriaDt.Rows[i]["Totale"];
             }
             lblTotaleCatValue.Text = tot.ToString();
+
+            TotalChanged(this, null);
         }
 
         private void btnDeleteVoceCat_Click(object sender, EventArgs e)
