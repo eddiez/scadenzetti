@@ -48,6 +48,8 @@
             this.btnAddMovFattura = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.lblTotFattura = new System.Windows.Forms.Label();
+            this.lblTotale = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // flowLayoutPanelMovs
@@ -272,11 +274,33 @@
             this.btnCancel.Text = "Annulla";
             this.btnCancel.UseVisualStyleBackColor = true;
             // 
+            // lblTotFattura
+            // 
+            this.lblTotFattura.AutoSize = true;
+            this.lblTotFattura.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotFattura.Location = new System.Drawing.Point(323, 184);
+            this.lblTotFattura.Name = "lblTotFattura";
+            this.lblTotFattura.Size = new System.Drawing.Size(70, 25);
+            this.lblTotFattura.TabIndex = 41;
+            this.lblTotFattura.Text = "TOT: ";
+            // 
+            // lblTotale
+            // 
+            this.lblTotale.AutoSize = true;
+            this.lblTotale.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotale.Location = new System.Drawing.Point(388, 184);
+            this.lblTotale.Name = "lblTotale";
+            this.lblTotale.Size = new System.Drawing.Size(24, 25);
+            this.lblTotale.TabIndex = 41;
+            this.lblTotale.Text = "0";
+            // 
             // AddFatturaMultiMovForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(759, 711);
+            this.Controls.Add(this.lblTotale);
+            this.Controls.Add(this.lblTotFattura);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnAddMovFattura);
@@ -327,5 +351,7 @@
         private System.Windows.Forms.Button btnAddMovFattura;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Label lblTotFattura;
+        private System.Windows.Forms.Label lblTotale;
     }
 }

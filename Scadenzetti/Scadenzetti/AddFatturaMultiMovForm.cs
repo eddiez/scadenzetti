@@ -70,12 +70,24 @@ namespace Scadenzetti
             MovimentoFatturaControl mfc = new MovimentoFatturaControl(catlist);
             catControls.Add(mfc);
             flowLayoutPanelMovs.Controls.Add(mfc);
+            mfc.TotalChanged += totaleFattura_Changed;
 
             mfc = new MovimentoFatturaControl(catlist);
             catControls.Add(mfc);
             flowLayoutPanelMovs.Controls.Add(mfc);
+            mfc.TotalChanged += totaleFattura_Changed;
 
             lblNumMovFattura.Text = "2";
+        }
+
+        private void totaleFattura_Changed(object sender, EventArgs e)
+        {
+            decimal total = 0;
+            foreach (MovimentoFatturaControl mfc in catControls)
+            {
+                total += mfc.getTotaleCategoria();
+            }
+            lblTotale.Text = total.ToString("C");
         }
 
         private void btnAddDest_Click(object sender, EventArgs e)
@@ -107,6 +119,8 @@ namespace Scadenzetti
             catControls.Add(mfc);
             flowLayoutPanelMovs.Controls.Add(mfc);
             lblNumMovFattura.Text = catControls.Count.ToString();
+
+            mfc.TotalChanged += totaleFattura_Changed;
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -130,7 +144,7 @@ namespace Scadenzetti
             scadenza = dtpickScadenza.Value;
             causalePrefix = txtCausale.Text;
 
-            Movimento m;
+            //Movimento m;
             int idcat;
             foreach (MovimentoFatturaControl mfc in catControls)
             {
