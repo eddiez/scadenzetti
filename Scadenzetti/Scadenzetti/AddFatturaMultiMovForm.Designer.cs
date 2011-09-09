@@ -62,7 +62,7 @@
             this.flowLayoutPanelMovs.MaximumSize = new System.Drawing.Size(588, 2500);
             this.flowLayoutPanelMovs.Name = "flowLayoutPanelMovs";
             this.flowLayoutPanelMovs.Size = new System.Drawing.Size(588, 427);
-            this.flowLayoutPanelMovs.TabIndex = 40;
+            this.flowLayoutPanelMovs.TabIndex = 5;
             this.flowLayoutPanelMovs.WrapContents = false;
             // 
             // label5
@@ -106,7 +106,7 @@
             this.txtCausale.Multiline = true;
             this.txtCausale.Name = "txtCausale";
             this.txtCausale.Size = new System.Drawing.Size(329, 28);
-            this.txtCausale.TabIndex = 32;
+            this.txtCausale.TabIndex = 4;
             // 
             // lblCausale
             // 
@@ -127,7 +127,7 @@
             this.dtpickScadenza.Margin = new System.Windows.Forms.Padding(4);
             this.dtpickScadenza.Name = "dtpickScadenza";
             this.dtpickScadenza.Size = new System.Drawing.Size(329, 29);
-            this.dtpickScadenza.TabIndex = 19;
+            this.dtpickScadenza.TabIndex = 3;
             // 
             // lblScadenza
             // 
@@ -172,7 +172,7 @@
             this.dropDest.Name = "dropDest";
             this.dropDest.Size = new System.Drawing.Size(329, 32);
             this.dropDest.Sorted = true;
-            this.dropDest.TabIndex = 16;
+            this.dropDest.TabIndex = 1;
             // 
             // dropUtente
             // 
@@ -184,7 +184,7 @@
             this.dropUtente.Name = "dropUtente";
             this.dropUtente.Size = new System.Drawing.Size(329, 32);
             this.dropUtente.Sorted = true;
-            this.dropUtente.TabIndex = 15;
+            this.dropUtente.TabIndex = 0;
             // 
             // shapeContainer1
             // 
@@ -224,7 +224,7 @@
             this.btnAddDest.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddDest.Name = "btnAddDest";
             this.btnAddDest.Size = new System.Drawing.Size(51, 43);
-            this.btnAddDest.TabIndex = 38;
+            this.btnAddDest.TabIndex = 2;
             this.btnAddDest.UseVisualStyleBackColor = false;
             this.btnAddDest.Click += new System.EventHandler(this.btnAddDest_Click);
             // 
@@ -252,25 +252,27 @@
             // 
             // btnAdd
             // 
+            this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.Location = new System.Drawing.Point(324, 665);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(157, 37);
-            this.btnAdd.TabIndex = 43;
+            this.btnAdd.TabIndex = 6;
             this.btnAdd.Text = "Aggiungi";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnCancel
             // 
+            this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.Location = new System.Drawing.Point(500, 665);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(157, 37);
-            this.btnCancel.TabIndex = 44;
+            this.btnCancel.TabIndex = 7;
             this.btnCancel.Text = "Annulla";
             this.btnCancel.UseVisualStyleBackColor = true;
             // 
