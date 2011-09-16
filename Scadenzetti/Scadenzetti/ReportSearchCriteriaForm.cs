@@ -52,7 +52,7 @@ namespace Scadenzetti
                 crb = new CategoryRadioButton();
                 crb.IdCategoria = int.Parse(cdt[i]["ID"].ToString());
                 crb.Text = cdt[i]["Nome"].ToString();
-                crb.Size = new Size(240, 25);
+                crb.Size = new Size(270, 25);
                 flowLayoutPanelCategories.Controls.Add(crb);
             }
         }

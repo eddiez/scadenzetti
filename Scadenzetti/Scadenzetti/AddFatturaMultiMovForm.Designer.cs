@@ -61,7 +61,7 @@
             this.flowLayoutPanelMovs.Location = new System.Drawing.Point(69, 223);
             this.flowLayoutPanelMovs.MaximumSize = new System.Drawing.Size(588, 2500);
             this.flowLayoutPanelMovs.Name = "flowLayoutPanelMovs";
-            this.flowLayoutPanelMovs.Size = new System.Drawing.Size(588, 427);
+            this.flowLayoutPanelMovs.Size = new System.Drawing.Size(588, 565);
             this.flowLayoutPanelMovs.TabIndex = 5;
             this.flowLayoutPanelMovs.WrapContents = false;
             // 
@@ -112,7 +112,7 @@
             // 
             this.lblCausale.AutoSize = true;
             this.lblCausale.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCausale.Location = new System.Drawing.Point(61, 134);
+            this.lblCausale.Location = new System.Drawing.Point(65, 133);
             this.lblCausale.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCausale.Name = "lblCausale";
             this.lblCausale.Size = new System.Drawing.Size(149, 24);
@@ -133,7 +133,7 @@
             // 
             this.lblScadenza.AutoSize = true;
             this.lblScadenza.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblScadenza.Location = new System.Drawing.Point(65, 99);
+            this.lblScadenza.Location = new System.Drawing.Point(66, 97);
             this.lblScadenza.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblScadenza.Name = "lblScadenza";
             this.lblScadenza.Size = new System.Drawing.Size(133, 24);
@@ -193,7 +193,7 @@
             this.shapeContainer1.Name = "shapeContainer1";
             this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
             this.lineShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(759, 711);
+            this.shapeContainer1.Size = new System.Drawing.Size(759, 855);
             this.shapeContainer1.TabIndex = 39;
             this.shapeContainer1.TabStop = false;
             // 
@@ -254,7 +254,7 @@
             // 
             this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(324, 665);
+            this.btnAdd.Location = new System.Drawing.Point(324, 809);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(157, 37);
@@ -268,7 +268,7 @@
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(500, 665);
+            this.btnCancel.Location = new System.Drawing.Point(500, 809);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(157, 37);
@@ -300,7 +300,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(759, 711);
+            this.ClientSize = new System.Drawing.Size(759, 855);
             this.Controls.Add(this.lblTotale);
             this.Controls.Add(this.lblTotFattura);
             this.Controls.Add(this.btnAdd);

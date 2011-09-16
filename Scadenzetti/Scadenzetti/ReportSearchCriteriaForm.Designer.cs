@@ -66,15 +66,16 @@
             // 
             // tabReports
             // 
+            this.tabReports.Controls.Add(this.tabPageCategoriaMov);
             this.tabReports.Controls.Add(this.tabPageUsciteMensili);
             this.tabReports.Controls.Add(this.tabPageYearMatrix);
-            this.tabReports.Controls.Add(this.tabPageCategoriaMov);
             this.tabReports.Controls.Add(this.tabPagePersonalizzato);
             this.tabReports.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabReports.Location = new System.Drawing.Point(3, 12);
+            this.tabReports.Location = new System.Drawing.Point(4, 15);
+            this.tabReports.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabReports.Name = "tabReports";
             this.tabReports.SelectedIndex = 0;
-            this.tabReports.Size = new System.Drawing.Size(494, 342);
+            this.tabReports.Size = new System.Drawing.Size(659, 421);
             this.tabReports.TabIndex = 0;
             // 
             // tabPageUsciteMensili
@@ -87,10 +88,11 @@
             this.tabPageUsciteMensili.Controls.Add(this.label1);
             this.tabPageUsciteMensili.Controls.Add(this.label2);
             this.tabPageUsciteMensili.Controls.Add(this.lblMese);
-            this.tabPageUsciteMensili.Location = new System.Drawing.Point(4, 25);
+            this.tabPageUsciteMensili.Location = new System.Drawing.Point(4, 29);
+            this.tabPageUsciteMensili.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPageUsciteMensili.Name = "tabPageUsciteMensili";
-            this.tabPageUsciteMensili.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageUsciteMensili.Size = new System.Drawing.Size(486, 313);
+            this.tabPageUsciteMensili.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPageUsciteMensili.Size = new System.Drawing.Size(651, 388);
             this.tabPageUsciteMensili.TabIndex = 0;
             this.tabPageUsciteMensili.Text = "Uscite mensili";
             this.tabPageUsciteMensili.UseVisualStyleBackColor = true;
@@ -99,14 +101,16 @@
             // 
             this.flowLayoutPanelUsers.AutoScroll = true;
             this.flowLayoutPanelUsers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.flowLayoutPanelUsers.Location = new System.Drawing.Point(146, 127);
+            this.flowLayoutPanelUsers.Location = new System.Drawing.Point(195, 156);
+            this.flowLayoutPanelUsers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flowLayoutPanelUsers.Name = "flowLayoutPanelUsers";
-            this.flowLayoutPanelUsers.Size = new System.Drawing.Size(315, 83);
+            this.flowLayoutPanelUsers.Size = new System.Drawing.Size(419, 102);
             this.flowLayoutPanelUsers.TabIndex = 5;
             // 
             // numAnno
             // 
-            this.numAnno.Location = new System.Drawing.Point(377, 81);
+            this.numAnno.Location = new System.Drawing.Point(503, 100);
+            this.numAnno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numAnno.Maximum = new decimal(new int[] {
             2100,
             0,
@@ -119,7 +123,7 @@
             0});
             this.numAnno.Name = "numAnno";
             this.numAnno.ReadOnly = true;
-            this.numAnno.Size = new System.Drawing.Size(84, 22);
+            this.numAnno.Size = new System.Drawing.Size(112, 26);
             this.numAnno.TabIndex = 4;
             this.numAnno.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.numAnno.Value = new decimal(new int[] {
@@ -130,9 +134,10 @@
             // 
             // btnCreateMonthlyExpense
             // 
-            this.btnCreateMonthlyExpense.Location = new System.Drawing.Point(352, 254);
+            this.btnCreateMonthlyExpense.Location = new System.Drawing.Point(469, 313);
+            this.btnCreateMonthlyExpense.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCreateMonthlyExpense.Name = "btnCreateMonthlyExpense";
-            this.btnCreateMonthlyExpense.Size = new System.Drawing.Size(109, 31);
+            this.btnCreateMonthlyExpense.Size = new System.Drawing.Size(145, 38);
             this.btnCreateMonthlyExpense.TabIndex = 3;
             this.btnCreateMonthlyExpense.Text = "Genera";
             this.btnCreateMonthlyExpense.UseVisualStyleBackColor = true;
@@ -155,26 +160,29 @@
             "Ottobre",
             "Novembre",
             "Dicembre"});
-            this.cbxMese.Location = new System.Drawing.Point(151, 80);
+            this.cbxMese.Location = new System.Drawing.Point(201, 98);
+            this.cbxMese.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbxMese.Name = "cbxMese";
-            this.cbxMese.Size = new System.Drawing.Size(164, 24);
+            this.cbxMese.Size = new System.Drawing.Size(217, 28);
             this.cbxMese.TabIndex = 1;
             // 
             // lblUtente
             // 
             this.lblUtente.AutoSize = true;
-            this.lblUtente.Location = new System.Drawing.Point(17, 127);
+            this.lblUtente.Location = new System.Drawing.Point(23, 156);
+            this.lblUtente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUtente.Name = "lblUtente";
-            this.lblUtente.Size = new System.Drawing.Size(42, 16);
+            this.lblUtente.Size = new System.Drawing.Size(53, 20);
             this.lblUtente.TabIndex = 0;
             this.lblUtente.Text = "Utenti";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(332, 83);
+            this.label1.Location = new System.Drawing.Point(443, 102);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 16);
+            this.label1.Size = new System.Drawing.Size(47, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Anno";
             // 
@@ -182,18 +190,20 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(17, 25);
+            this.label2.Location = new System.Drawing.Point(23, 31);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(190, 16);
+            this.label2.Size = new System.Drawing.Size(232, 20);
             this.label2.TabIndex = 0;
             this.label2.Text = "Uscite Mensili non saldate";
             // 
             // lblMese
             // 
             this.lblMese.AutoSize = true;
-            this.lblMese.Location = new System.Drawing.Point(17, 83);
+            this.lblMese.Location = new System.Drawing.Point(23, 102);
+            this.lblMese.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMese.Name = "lblMese";
-            this.lblMese.Size = new System.Drawing.Size(42, 16);
+            this.lblMese.Size = new System.Drawing.Size(50, 20);
             this.lblMese.TabIndex = 0;
             this.lblMese.Text = "Mese";
             // 
@@ -203,17 +213,19 @@
             this.tabPageYearMatrix.Controls.Add(this.label3);
             this.tabPageYearMatrix.Controls.Add(this.lblAnnoMatrix);
             this.tabPageYearMatrix.Controls.Add(this.btnCreateMatrixReport);
-            this.tabPageYearMatrix.Location = new System.Drawing.Point(4, 25);
+            this.tabPageYearMatrix.Location = new System.Drawing.Point(4, 29);
+            this.tabPageYearMatrix.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPageYearMatrix.Name = "tabPageYearMatrix";
-            this.tabPageYearMatrix.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageYearMatrix.Size = new System.Drawing.Size(486, 313);
+            this.tabPageYearMatrix.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPageYearMatrix.Size = new System.Drawing.Size(651, 388);
             this.tabPageYearMatrix.TabIndex = 4;
             this.tabPageYearMatrix.Text = "Uscite Annuali";
             this.tabPageYearMatrix.UseVisualStyleBackColor = true;
             // 
             // numericUpDownMatrix
             // 
-            this.numericUpDownMatrix.Location = new System.Drawing.Point(204, 127);
+            this.numericUpDownMatrix.Location = new System.Drawing.Point(272, 156);
+            this.numericUpDownMatrix.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericUpDownMatrix.Maximum = new decimal(new int[] {
             2100,
             0,
@@ -226,7 +238,7 @@
             0});
             this.numericUpDownMatrix.Name = "numericUpDownMatrix";
             this.numericUpDownMatrix.ReadOnly = true;
-            this.numericUpDownMatrix.Size = new System.Drawing.Size(84, 22);
+            this.numericUpDownMatrix.Size = new System.Drawing.Size(112, 26);
             this.numericUpDownMatrix.TabIndex = 5;
             this.numericUpDownMatrix.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.numericUpDownMatrix.Value = new decimal(new int[] {
@@ -239,26 +251,29 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(17, 25);
+            this.label3.Location = new System.Drawing.Point(23, 31);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(204, 16);
+            this.label3.Size = new System.Drawing.Size(248, 20);
             this.label3.TabIndex = 1;
             this.label3.Text = "Uscite annuali saldate e non";
             // 
             // lblAnnoMatrix
             // 
             this.lblAnnoMatrix.AutoSize = true;
-            this.lblAnnoMatrix.Location = new System.Drawing.Point(141, 129);
+            this.lblAnnoMatrix.Location = new System.Drawing.Point(188, 159);
+            this.lblAnnoMatrix.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAnnoMatrix.Name = "lblAnnoMatrix";
-            this.lblAnnoMatrix.Size = new System.Drawing.Size(39, 16);
+            this.lblAnnoMatrix.Size = new System.Drawing.Size(47, 20);
             this.lblAnnoMatrix.TabIndex = 1;
             this.lblAnnoMatrix.Text = "Anno";
             // 
             // btnCreateMatrixReport
             // 
-            this.btnCreateMatrixReport.Location = new System.Drawing.Point(353, 264);
+            this.btnCreateMatrixReport.Location = new System.Drawing.Point(471, 325);
+            this.btnCreateMatrixReport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCreateMatrixReport.Name = "btnCreateMatrixReport";
-            this.btnCreateMatrixReport.Size = new System.Drawing.Size(109, 31);
+            this.btnCreateMatrixReport.Size = new System.Drawing.Size(145, 38);
             this.btnCreateMatrixReport.TabIndex = 0;
             this.btnCreateMatrixReport.Text = "Genera";
             this.btnCreateMatrixReport.UseVisualStyleBackColor = true;
@@ -270,10 +285,11 @@
             this.tabPageCategoriaMov.Controls.Add(this.lblCat);
             this.tabPageCategoriaMov.Controls.Add(this.flowLayoutPanelCategories);
             this.tabPageCategoriaMov.Controls.Add(this.btnCreateCategoryReport);
-            this.tabPageCategoriaMov.Location = new System.Drawing.Point(4, 25);
+            this.tabPageCategoriaMov.Location = new System.Drawing.Point(4, 29);
+            this.tabPageCategoriaMov.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPageCategoriaMov.Name = "tabPageCategoriaMov";
-            this.tabPageCategoriaMov.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageCategoriaMov.Size = new System.Drawing.Size(486, 313);
+            this.tabPageCategoriaMov.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPageCategoriaMov.Size = new System.Drawing.Size(651, 388);
             this.tabPageCategoriaMov.TabIndex = 1;
             this.tabPageCategoriaMov.Text = "Categoria";
             this.tabPageCategoriaMov.UseVisualStyleBackColor = true;
@@ -282,18 +298,20 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(17, 25);
+            this.label4.Location = new System.Drawing.Point(23, 31);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(437, 16);
+            this.label4.Size = new System.Drawing.Size(540, 20);
             this.label4.TabIndex = 8;
             this.label4.Text = "Tutti i movimenti (entrate/uscite) saldati e non di una categoria";
             // 
             // lblCat
             // 
             this.lblCat.AutoSize = true;
-            this.lblCat.Location = new System.Drawing.Point(20, 68);
+            this.lblCat.Location = new System.Drawing.Point(27, 84);
+            this.lblCat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCat.Name = "lblCat";
-            this.lblCat.Size = new System.Drawing.Size(131, 16);
+            this.lblCat.Size = new System.Drawing.Size(162, 20);
             this.lblCat.TabIndex = 8;
             this.lblCat.Text = "Categoria movimenti";
             // 
@@ -301,16 +319,18 @@
             // 
             this.flowLayoutPanelCategories.AutoScroll = true;
             this.flowLayoutPanelCategories.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.flowLayoutPanelCategories.Location = new System.Drawing.Point(190, 68);
+            this.flowLayoutPanelCategories.Location = new System.Drawing.Point(253, 84);
+            this.flowLayoutPanelCategories.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flowLayoutPanelCategories.Name = "flowLayoutPanelCategories";
-            this.flowLayoutPanelCategories.Size = new System.Drawing.Size(265, 145);
+            this.flowLayoutPanelCategories.Size = new System.Drawing.Size(353, 178);
             this.flowLayoutPanelCategories.TabIndex = 6;
             // 
             // btnCreateCategoryReport
             // 
-            this.btnCreateCategoryReport.Location = new System.Drawing.Point(346, 262);
+            this.btnCreateCategoryReport.Location = new System.Drawing.Point(461, 322);
+            this.btnCreateCategoryReport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCreateCategoryReport.Name = "btnCreateCategoryReport";
-            this.btnCreateCategoryReport.Size = new System.Drawing.Size(109, 31);
+            this.btnCreateCategoryReport.Size = new System.Drawing.Size(145, 38);
             this.btnCreateCategoryReport.TabIndex = 1;
             this.btnCreateCategoryReport.Text = "Genera";
             this.btnCreateCategoryReport.UseVisualStyleBackColor = true;
@@ -324,19 +344,21 @@
             this.tabPagePersonalizzato.Controls.Add(this.lblDataTo);
             this.tabPagePersonalizzato.Controls.Add(this.lblMovFrom);
             this.tabPagePersonalizzato.Controls.Add(this.lblHeadPers);
-            this.tabPagePersonalizzato.Location = new System.Drawing.Point(4, 25);
+            this.tabPagePersonalizzato.Location = new System.Drawing.Point(4, 29);
+            this.tabPagePersonalizzato.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPagePersonalizzato.Name = "tabPagePersonalizzato";
-            this.tabPagePersonalizzato.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPagePersonalizzato.Size = new System.Drawing.Size(486, 313);
+            this.tabPagePersonalizzato.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPagePersonalizzato.Size = new System.Drawing.Size(651, 388);
             this.tabPagePersonalizzato.TabIndex = 3;
             this.tabPagePersonalizzato.Text = "Personalizzato";
             this.tabPagePersonalizzato.UseVisualStyleBackColor = true;
             // 
             // btnCreateAllReport
             // 
-            this.btnCreateAllReport.Location = new System.Drawing.Point(321, 250);
+            this.btnCreateAllReport.Location = new System.Drawing.Point(428, 308);
+            this.btnCreateAllReport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCreateAllReport.Name = "btnCreateAllReport";
-            this.btnCreateAllReport.Size = new System.Drawing.Size(109, 31);
+            this.btnCreateAllReport.Size = new System.Drawing.Size(145, 38);
             this.btnCreateAllReport.TabIndex = 12;
             this.btnCreateAllReport.Text = "Genera";
             this.btnCreateAllReport.UseVisualStyleBackColor = true;
@@ -345,34 +367,38 @@
             // dtDataTo
             // 
             this.dtDataTo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtDataTo.Location = new System.Drawing.Point(230, 141);
+            this.dtDataTo.Location = new System.Drawing.Point(307, 174);
+            this.dtDataTo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtDataTo.Name = "dtDataTo";
-            this.dtDataTo.Size = new System.Drawing.Size(200, 22);
+            this.dtDataTo.Size = new System.Drawing.Size(265, 26);
             this.dtDataTo.TabIndex = 11;
             // 
             // dtDataFrom
             // 
             this.dtDataFrom.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtDataFrom.Location = new System.Drawing.Point(230, 68);
+            this.dtDataFrom.Location = new System.Drawing.Point(307, 84);
+            this.dtDataFrom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtDataFrom.Name = "dtDataFrom";
-            this.dtDataFrom.Size = new System.Drawing.Size(200, 22);
+            this.dtDataFrom.Size = new System.Drawing.Size(265, 26);
             this.dtDataFrom.TabIndex = 11;
             // 
             // lblDataTo
             // 
             this.lblDataTo.AutoSize = true;
-            this.lblDataTo.Location = new System.Drawing.Point(17, 146);
+            this.lblDataTo.Location = new System.Drawing.Point(23, 180);
+            this.lblDataTo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDataTo.Name = "lblDataTo";
-            this.lblDataTo.Size = new System.Drawing.Size(84, 16);
+            this.lblDataTo.Size = new System.Drawing.Size(106, 20);
             this.lblDataTo.TabIndex = 10;
             this.lblDataTo.Text = "Data termine";
             // 
             // lblMovFrom
             // 
             this.lblMovFrom.AutoSize = true;
-            this.lblMovFrom.Location = new System.Drawing.Point(17, 73);
+            this.lblMovFrom.Location = new System.Drawing.Point(23, 90);
+            this.lblMovFrom.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMovFrom.Name = "lblMovFrom";
-            this.lblMovFrom.Size = new System.Drawing.Size(92, 16);
+            this.lblMovFrom.Size = new System.Drawing.Size(115, 20);
             this.lblMovFrom.TabIndex = 10;
             this.lblMovFrom.Text = "Data partenza";
             // 
@@ -380,18 +406,20 @@
             // 
             this.lblHeadPers.AutoSize = true;
             this.lblHeadPers.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHeadPers.Location = new System.Drawing.Point(17, 25);
+            this.lblHeadPers.Location = new System.Drawing.Point(23, 31);
+            this.lblHeadPers.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblHeadPers.Name = "lblHeadPers";
-            this.lblHeadPers.Size = new System.Drawing.Size(120, 16);
+            this.lblHeadPers.Size = new System.Drawing.Size(149, 20);
             this.lblHeadPers.TabIndex = 9;
             this.lblHeadPers.Text = "Tutti i movimenti";
             // 
             // ReportSearchCriteriaForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(509, 366);
+            this.ClientSize = new System.Drawing.Size(679, 450);
             this.Controls.Add(this.tabReports);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "ReportSearchCriteriaForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Criteri di creazione report di stampa";

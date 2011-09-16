@@ -33,6 +33,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuovaRateazioneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fatturaMultimovimentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.esciToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.utentiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aggiungiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,7 +51,6 @@
             this.btnNewMov = new System.Windows.Forms.Button();
             this.grpNextMonth = new System.Windows.Forms.GroupBox();
             this.dataGridNextMonthMov = new System.Windows.Forms.DataGridView();
-            this.fatturaMultimovimentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.grpElapsedMov.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datagridElapsedMov)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -64,9 +64,9 @@
             this.grpElapsedMov.Controls.Add(this.datagridElapsedMov);
             this.grpElapsedMov.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpElapsedMov.Location = new System.Drawing.Point(69, 315);
-            this.grpElapsedMov.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpElapsedMov.Margin = new System.Windows.Forms.Padding(4);
             this.grpElapsedMov.Name = "grpElapsedMov";
-            this.grpElapsedMov.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpElapsedMov.Padding = new System.Windows.Forms.Padding(4);
             this.grpElapsedMov.Size = new System.Drawing.Size(727, 219);
             this.grpElapsedMov.TabIndex = 1;
             this.grpElapsedMov.TabStop = false;
@@ -79,7 +79,7 @@
             this.datagridElapsedMov.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.datagridElapsedMov.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.datagridElapsedMov.Location = new System.Drawing.Point(8, 27);
-            this.datagridElapsedMov.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.datagridElapsedMov.Margin = new System.Windows.Forms.Padding(4);
             this.datagridElapsedMov.Name = "datagridElapsedMov";
             this.datagridElapsedMov.ReadOnly = true;
             this.datagridElapsedMov.RowHeadersVisible = false;
@@ -120,6 +120,13 @@
             this.nuovaRateazioneToolStripMenuItem.Size = new System.Drawing.Size(244, 24);
             this.nuovaRateazioneToolStripMenuItem.Text = "Nuova rateazione";
             this.nuovaRateazioneToolStripMenuItem.Click += new System.EventHandler(this.nuovaRateazioneToolStripMenuItem_Click);
+            // 
+            // fatturaMultimovimentoToolStripMenuItem
+            // 
+            this.fatturaMultimovimentoToolStripMenuItem.Name = "fatturaMultimovimentoToolStripMenuItem";
+            this.fatturaMultimovimentoToolStripMenuItem.Size = new System.Drawing.Size(244, 24);
+            this.fatturaMultimovimentoToolStripMenuItem.Text = "Fattura multi-movimento";
+            this.fatturaMultimovimentoToolStripMenuItem.Click += new System.EventHandler(this.fatturaMultimovimentoToolStripMenuItem_Click);
             // 
             // esciToolStripMenuItem
             // 
@@ -219,7 +226,7 @@
             this.btnPrintMov.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnPrintMov.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrintMov.Location = new System.Drawing.Point(561, 75);
-            this.btnPrintMov.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPrintMov.Margin = new System.Windows.Forms.Padding(4);
             this.btnPrintMov.Name = "btnPrintMov";
             this.btnPrintMov.Size = new System.Drawing.Size(235, 217);
             this.btnPrintMov.TabIndex = 2;
@@ -234,8 +241,8 @@
             this.btnSearchMov.BackgroundImage = global::Scadenzetti.Properties.Resources.Sherlock;
             this.btnSearchMov.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnSearchMov.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearchMov.Location = new System.Drawing.Point(319, 75);
-            this.btnSearchMov.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSearchMov.Location = new System.Drawing.Point(315, 75);
+            this.btnSearchMov.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearchMov.Name = "btnSearchMov";
             this.btnSearchMov.Size = new System.Drawing.Size(235, 217);
             this.btnSearchMov.TabIndex = 1;
@@ -251,7 +258,7 @@
             this.btnNewMov.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnNewMov.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNewMov.Location = new System.Drawing.Point(69, 75);
-            this.btnNewMov.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNewMov.Margin = new System.Windows.Forms.Padding(4);
             this.btnNewMov.Name = "btnNewMov";
             this.btnNewMov.Size = new System.Drawing.Size(235, 217);
             this.btnNewMov.TabIndex = 0;
@@ -266,9 +273,9 @@
             this.grpNextMonth.Controls.Add(this.dataGridNextMonthMov);
             this.grpNextMonth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpNextMonth.Location = new System.Drawing.Point(69, 551);
-            this.grpNextMonth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpNextMonth.Margin = new System.Windows.Forms.Padding(4);
             this.grpNextMonth.Name = "grpNextMonth";
-            this.grpNextMonth.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpNextMonth.Padding = new System.Windows.Forms.Padding(4);
             this.grpNextMonth.Size = new System.Drawing.Size(727, 219);
             this.grpNextMonth.TabIndex = 1;
             this.grpNextMonth.TabStop = false;
@@ -281,7 +288,7 @@
             this.dataGridNextMonthMov.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dataGridNextMonthMov.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridNextMonthMov.Location = new System.Drawing.Point(8, 27);
-            this.dataGridNextMonthMov.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridNextMonthMov.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridNextMonthMov.Name = "dataGridNextMonthMov";
             this.dataGridNextMonthMov.ReadOnly = true;
             this.dataGridNextMonthMov.RowHeadersVisible = false;
@@ -290,13 +297,6 @@
             this.dataGridNextMonthMov.TabIndex = 0;
             this.dataGridNextMonthMov.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridNextMonthMov_CellDoubleClick);
             this.dataGridNextMonthMov.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dataGridNextMonthMov_RowPrePaint);
-            // 
-            // fatturaMultimovimentoToolStripMenuItem
-            // 
-            this.fatturaMultimovimentoToolStripMenuItem.Name = "fatturaMultimovimentoToolStripMenuItem";
-            this.fatturaMultimovimentoToolStripMenuItem.Size = new System.Drawing.Size(244, 24);
-            this.fatturaMultimovimentoToolStripMenuItem.Text = "Fattura multi-movimento";
-            this.fatturaMultimovimentoToolStripMenuItem.Click += new System.EventHandler(this.fatturaMultimovimentoToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -310,7 +310,7 @@
             this.Controls.Add(this.btnNewMov);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Scadenzetti";
