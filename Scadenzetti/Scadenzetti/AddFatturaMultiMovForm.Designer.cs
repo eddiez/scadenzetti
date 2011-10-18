@@ -50,6 +50,8 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.lblTotFattura = new System.Windows.Forms.Label();
             this.lblTotale = new System.Windows.Forms.Label();
+            this.lblTotaleFattura = new System.Windows.Forms.Label();
+            this.txtTotFattura = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // flowLayoutPanelMovs
@@ -58,11 +60,11 @@
             this.flowLayoutPanelMovs.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutPanelMovs.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanelMovs.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.flowLayoutPanelMovs.Location = new System.Drawing.Point(69, 223);
+            this.flowLayoutPanelMovs.Location = new System.Drawing.Point(69, 294);
             this.flowLayoutPanelMovs.MaximumSize = new System.Drawing.Size(588, 2500);
             this.flowLayoutPanelMovs.Name = "flowLayoutPanelMovs";
-            this.flowLayoutPanelMovs.Size = new System.Drawing.Size(588, 565);
-            this.flowLayoutPanelMovs.TabIndex = 5;
+            this.flowLayoutPanelMovs.Size = new System.Drawing.Size(588, 494);
+            this.flowLayoutPanelMovs.TabIndex = 7;
             this.flowLayoutPanelMovs.WrapContents = false;
             // 
             // label5
@@ -200,16 +202,16 @@
             // lineShape1
             // 
             this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = -14;
-            this.lineShape1.X2 = 770;
-            this.lineShape1.Y1 = 173;
-            this.lineShape1.Y2 = 173;
+            this.lineShape1.X1 = -11;
+            this.lineShape1.X2 = 773;
+            this.lineShape1.Y1 = 239;
+            this.lineShape1.Y2 = 239;
             // 
             // lblCatMovs
             // 
             this.lblCatMovs.AutoSize = true;
             this.lblCatMovs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCatMovs.Location = new System.Drawing.Point(65, 184);
+            this.lblCatMovs.Location = new System.Drawing.Point(65, 255);
             this.lblCatMovs.Name = "lblCatMovs";
             this.lblCatMovs.Size = new System.Drawing.Size(184, 25);
             this.lblCatMovs.TabIndex = 41;
@@ -232,7 +234,7 @@
             // 
             this.lblNumMovFattura.AutoSize = true;
             this.lblNumMovFattura.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumMovFattura.Location = new System.Drawing.Point(255, 184);
+            this.lblNumMovFattura.Location = new System.Drawing.Point(255, 255);
             this.lblNumMovFattura.Name = "lblNumMovFattura";
             this.lblNumMovFattura.Size = new System.Drawing.Size(24, 25);
             this.lblNumMovFattura.TabIndex = 41;
@@ -242,10 +244,10 @@
             // 
             this.btnAddMovFattura.BackColor = System.Drawing.Color.GreenYellow;
             this.btnAddMovFattura.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddMovFattura.Location = new System.Drawing.Point(618, 187);
+            this.btnAddMovFattura.Location = new System.Drawing.Point(618, 254);
             this.btnAddMovFattura.Name = "btnAddMovFattura";
             this.btnAddMovFattura.Size = new System.Drawing.Size(39, 30);
-            this.btnAddMovFattura.TabIndex = 42;
+            this.btnAddMovFattura.TabIndex = 6;
             this.btnAddMovFattura.Text = "+";
             this.btnAddMovFattura.UseVisualStyleBackColor = false;
             this.btnAddMovFattura.Click += new System.EventHandler(this.btnAddMovFattura_Click);
@@ -258,7 +260,7 @@
             this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(157, 37);
-            this.btnAdd.TabIndex = 6;
+            this.btnAdd.TabIndex = 8;
             this.btnAdd.Text = "Aggiungi";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -272,7 +274,7 @@
             this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(157, 37);
-            this.btnCancel.TabIndex = 7;
+            this.btnCancel.TabIndex = 9;
             this.btnCancel.Text = "Annulla";
             this.btnCancel.UseVisualStyleBackColor = true;
             // 
@@ -280,7 +282,7 @@
             // 
             this.lblTotFattura.AutoSize = true;
             this.lblTotFattura.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotFattura.Location = new System.Drawing.Point(323, 184);
+            this.lblTotFattura.Location = new System.Drawing.Point(323, 255);
             this.lblTotFattura.Name = "lblTotFattura";
             this.lblTotFattura.Size = new System.Drawing.Size(70, 25);
             this.lblTotFattura.TabIndex = 41;
@@ -290,17 +292,40 @@
             // 
             this.lblTotale.AutoSize = true;
             this.lblTotale.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotale.Location = new System.Drawing.Point(388, 184);
+            this.lblTotale.Location = new System.Drawing.Point(388, 255);
             this.lblTotale.Name = "lblTotale";
             this.lblTotale.Size = new System.Drawing.Size(24, 25);
             this.lblTotale.TabIndex = 41;
             this.lblTotale.Text = "0";
+            // 
+            // lblTotaleFattura
+            // 
+            this.lblTotaleFattura.AutoSize = true;
+            this.lblTotaleFattura.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotaleFattura.Location = new System.Drawing.Point(65, 169);
+            this.lblTotaleFattura.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTotaleFattura.Name = "lblTotaleFattura";
+            this.lblTotaleFattura.Size = new System.Drawing.Size(124, 24);
+            this.lblTotaleFattura.TabIndex = 29;
+            this.lblTotaleFattura.Text = "Totale Fattura";
+            // 
+            // txtTotFattura
+            // 
+            this.txtTotFattura.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotFattura.Location = new System.Drawing.Point(328, 166);
+            this.txtTotFattura.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTotFattura.Multiline = true;
+            this.txtTotFattura.Name = "txtTotFattura";
+            this.txtTotFattura.Size = new System.Drawing.Size(329, 28);
+            this.txtTotFattura.TabIndex = 5;
             // 
             // AddFatturaMultiMovForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(759, 855);
+            this.Controls.Add(this.txtTotFattura);
+            this.Controls.Add(this.lblTotaleFattura);
             this.Controls.Add(this.lblTotale);
             this.Controls.Add(this.lblTotFattura);
             this.Controls.Add(this.btnAdd);
@@ -355,5 +380,7 @@
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Label lblTotFattura;
         private System.Windows.Forms.Label lblTotale;
+        private System.Windows.Forms.Label lblTotaleFattura;
+        private System.Windows.Forms.TextBox txtTotFattura;
     }
 }

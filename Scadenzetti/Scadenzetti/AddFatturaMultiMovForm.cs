@@ -138,6 +138,20 @@ namespace Scadenzetti
                 return;
             }
 
+
+            if (txtTotFattura.Text != "")
+            {
+                try
+                {
+                    float.Parse(txtTotFattura.Text);
+                }
+                catch (FormatException fe)
+                {
+                    MessageBox.Show(this, "Il totale fattura dev'essere un numero", "Formato totale fattura errato", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
+
             //impostazione campi locali
             idUtente = ((UtenteDropDownItem)dropUtente.SelectedItem).Id;
             idDest = ((DestinatarioDropDownItem)dropDest.SelectedItem).Id;
@@ -152,12 +166,12 @@ namespace Scadenzetti
                 idcat = mfc.getIdCategoria();
                 if(idcat==0)
                     dag.salvaMovimento("uscita", scadenza, false, mfc.getTotaleCategoria(), false,
-                    0, causalePrefix + " - " + mfc.getCausaleSuffix(), "", idUtente, idDest, null);
+                    0, causalePrefix + " - " + mfc.getCausaleSuffix() + " (tot.fattura € "+ txtTotFattura.Text +")", "", idUtente, idDest, null);
                 else{
 
                     movCategories.Add(idcat);
                     dag.salvaMovimento("uscita", scadenza, false, mfc.getTotaleCategoria(), false,
-                        0, causalePrefix + " - " + mfc.getCausaleSuffix(), "", idUtente, idDest, movCategories);
+                        0, causalePrefix + " - " + mfc.getCausaleSuffix() + " (tot.fattura € " + txtTotFattura.Text + ")", "", idUtente, idDest, movCategories);
                 }
             }
 
